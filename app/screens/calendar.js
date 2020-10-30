@@ -12,13 +12,24 @@ import {
 
 const Calendaar = () => {
     return (
-      <View>
-      <View><Text>hello</Text></View>
+      <SafeAreaView>
+      <View><Text>howdy</Text></View>
       
-      <Calendar/>
-      </View>
+      <Calendar
+      style={styles.cal}
+      
+      />  
+      </SafeAreaView>
     );
 }
+
+const styles = StyleSheet.create({
+  cal: {
+    borderWidth: 1,
+        borderColor: 'gray',
+        height: 350,
+  },
+})
 
 
 export default Calendaar;
