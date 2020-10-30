@@ -8,12 +8,17 @@ import {
     TouchableOpacity,
     Image,
   } from 'react-native';
+  import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 
-const Calendar = () => {
+const Calendaar = () => {
     return (
-<Text>hello</Text>
+      <View>
+      <View><Text>hello</Text></View>
+      
+      <Calendar/>
+      </View>
     );
 }
 
 
-export default Calendar;
+export default Calendaar;
