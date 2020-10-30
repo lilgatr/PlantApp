@@ -13,22 +13,43 @@ import {
 const Calendaar = () => {
     return (
       <SafeAreaView>
-      <View><Text>howdy</Text></View>
       
       <Calendar
       style={styles.cal}
-      
+      displayLoadingIndicator
+          markingType={'period'}
+          theme={{
+            calendarBackground: 'white',
+            textSectionTitleColor: 'black',
+            textSectionTitleDisabledColor: 'black',
+            dayTextColor: 'black',
+            todayTextColor: 'blue',
+            //selectedDayTextColor: 'red',
+            monthTextColor: 'black',
+            indicatorColor: 'white',
+            //selectedDayBackgroundColor: '#333248',
+            arrowColor: 'black',
+            // textDisabledColor: 'red',
+          
+
+            'stylesheet.calendar.header': {
+              week: {
+                marginTop: 5,
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+              },
+            },
+          }}
       />  
       </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
-  cal: {
-    borderWidth: 1,
-        borderColor: 'gray',
-        height: 350,
-  },
+  container: {},
+  leftbtn:{},
+  rightbtn:{},
+  cal: {},
 })
 
 
