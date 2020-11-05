@@ -3,5 +3,6 @@
         "calendaar",
         "leftbtn",
         "rightbtn"
-    ]
+    ],
+    "editor.formatOnSave": true
 }
