@@ -51,7 +51,7 @@ const Calendaar = () => {
           }}
         />
       </View>
-      <Divider style={{ marginVertical: 16 }} />
+      <Divider style={styles.lineStyle} />
       <View style={styles.bcontainer}>
         <Text style={{ color: "grey", fontSize: 13, fontWeight: "semi-bold" }}>
           10 AM
@@ -72,8 +72,9 @@ const styles = StyleSheet.create({
   },
   bcontainer: {
     flex: 1,
-    marginTop: 50,
+    marginTop: 24,
     paddingHorizontal: 16,
+    //justifyContent: "center",
     flexDirection: "column",
   },
   btncontainer: {
@@ -106,11 +107,15 @@ const styles = StyleSheet.create({
   },
   cal: {
     justifyContent: "center",
-    marginTop: 100,
-    marginBottom: 450,
+    marginTop: 50,
     paddingHorizontal: 16,
   },
-  lineStyle: { borderWidth: 1, borderColor: "black", margin: 10 },
+  lineStyle: {
+    borderWidth: 0.5,
+    borderColor: "black",
+    marginVertical: 16,
+    marginHorizontal: 16,
+  },
 });
 
 export default Calendaar;
