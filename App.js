@@ -9,6 +9,6 @@ import SignIn from "./app/screens/signIn";
 import SignUp from "./app/screens/signUp";
 import Today from "./app/screens/today";
 
-const App = () => <Today />;
+const App = () => <MyPlants />;
 
 export default App;
