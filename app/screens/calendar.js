@@ -1,7 +1,6 @@
 import React from "react";
 import {
   StyleSheet,
-  Text,
   View,
   SafeAreaView,
   SectionList,
@@ -10,6 +9,7 @@ import {
   Button,
 } from "react-native";
 import { Calendar, CalendarList, Agenda } from "react-native-calendars";
+import { Divider, Text } from "react-native-paper";
 import { Constants } from "expo";
 
 const Calendaar = () => {
@@ -51,6 +51,15 @@ const Calendaar = () => {
           }}
         />
       </View>
+      <Divider style={{ marginVertical: 16 }} />
+      <View style={styles.bcontainer}>
+        <Text style={{ color: "grey", fontSize: 13, fontWeight: "semi-bold" }}>
+          10 AM
+        </Text>
+        <Text style={{ color: "black", fontSize: 13, fontWeight: "bold" }}>
+          Water the Planes
+        </Text>
+      </View>
     </SafeAreaView>
   );
 };
@@ -59,6 +68,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: 50,
+    paddingHorizontal: 16,
+  },
+  bcontainer: {
+    flex: 1,
+    marginTop: 50,
+    paddingHorizontal: 16,
+    flexDirection: "column",
   },
   btncontainer: {
     paddingBottom: 24,
@@ -77,7 +93,6 @@ const styles = StyleSheet.create({
     top: 20,
     left: 190,
     zIndex: 2,
-    borderLeftColor: "#FFF",
   },
   round: {
     justifyContent: "center",
@@ -92,8 +107,10 @@ const styles = StyleSheet.create({
   cal: {
     justifyContent: "center",
     marginTop: 100,
-    paddingBottom: 450,
+    marginBottom: 450,
+    paddingHorizontal: 16,
   },
+  lineStyle: { borderWidth: 1, borderColor: "black", margin: 10 },
 });
 
 export default Calendaar;
