@@ -55,50 +55,6 @@ const Calendaar = () => {
   );
 };
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     marginTop: 50,
-//   },
-//   btncontainer: {
-//     alignSelf: "center",
-//     flexDirection: "row",
-//     paddingVertical: 16,
-//   },
-//   leftbtn: {
-//     fontSize: 13,
-//     fontWeight: "bold",
-//     //fontColor: "#352F39",
-//     backgroundColor: "#fff",
-//     marginTop: 10,
-//     padding: 12,
-//     //flexDirection: "row",
-//     //alignItems: "center",
-//     borderColor: "#352F39",
-//     borderRadius: 16,
-//     borderWidth: 2,
-
-//     //borderBottomWidth: 4,
-//   },
-//   rightbtn: {
-//     fontSize: 13,
-//     fontWeight: "bold",
-
-//     //paddingLeft: 16,
-//     backgroundColor: "#352F39",
-//     marginTop: 10,
-//     padding: 12,
-//     //flexDirection: "row",
-//     //alignItems: "center",
-//     borderColor: "#352F39",
-//     borderRadius: 16,
-//     borderWidth: 2,
-
-//     paddingLeft: 50,
-//   },
-//   cal: {},
-// });
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -141,3 +97,47 @@ const styles = StyleSheet.create({
 });
 
 export default Calendaar;
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     marginTop: 50,
+//   },
+//   btncontainer: {
+//     alignSelf: "center",
+//     flexDirection: "row",
+//     paddingVertical: 16,
+//   },
+//   leftbtn: {
+//     fontSize: 13,
+//     fontWeight: "bold",
+//     //fontColor: "#352F39",
+//     backgroundColor: "#fff",
+//     marginTop: 10,
+//     padding: 12,
+//     //flexDirection: "row",
+//     //alignItems: "center",
+//     borderColor: "#352F39",
+//     borderRadius: 16,
+//     borderWidth: 2,
+
+//     //borderBottomWidth: 4,
+//   },
+//   rightbtn: {
+//     fontSize: 13,
+//     fontWeight: "bold",
+
+//     //paddingLeft: 16,
+//     backgroundColor: "#352F39",
+//     marginTop: 10,
+//     padding: 12,
+//     //flexDirection: "row",
+//     //alignItems: "center",
+//     borderColor: "#352F39",
+//     borderRadius: 16,
+//     borderWidth: 2,
+
+//     paddingLeft: 50,
+//   },
+//   cal: {},
+// });+
