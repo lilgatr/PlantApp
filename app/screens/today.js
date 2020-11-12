@@ -11,8 +11,9 @@ import {
 } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import Calendaar from "./calendar";
 
-const Today = () => {
+const Today = (navigation) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.btncontainer}>
@@ -22,7 +23,9 @@ const Today = () => {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity style={[styles.round, styles.rightbtn]}>
-          <Text style={{ color: "black", fontSize: 13, fontWeight: "bold" }}>
+          <Text
+            style={{ color: "black", fontSize: 13, fontWeight: "bold" }}
+            onPress={() => navigation.navigate(Calendaar)}>
             Calendar
           </Text>
         </TouchableOpacity>
