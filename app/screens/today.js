@@ -7,9 +7,9 @@ import {
   TouchableOpacity,
   Image,
   Button,
+  Text,
 } from "react-native";
-import { Divider, Text } from "react-native-paper";
-import { Constants } from "expo";
+import { NavigationContainer } from "@react-navigation/native";
 
 const Today = () => {
   return (
