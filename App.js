@@ -14,8 +14,7 @@ import Settings from "./app/screens/settings";
 import PlantCard from "./app/screens/plantCard";
 
 const Stack = createStackNavigator();
-// 22:03
-
+//28 20
 function App() {
   return (
     <NavigationContainer>
