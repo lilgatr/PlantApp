@@ -1,5 +1,6 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 
 import Calendaar from "./app/screens/calendar";
 import Title from "./app/screens/title";
