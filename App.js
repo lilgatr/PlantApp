@@ -13,12 +13,12 @@ import Today from "./app/screens/today";
 
 const Stack = createStackNavigator();
 
-//const App = () => <MyPlants />;
 function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name='today' component={Today} />
+        <Stack.Screen name='calendaar' component={Calendaar} />
       </Stack.Navigator>
     </NavigationContainer>
   );
