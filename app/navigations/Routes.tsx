@@ -19,6 +19,11 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
+      <Stack.Navigator initialRouteName='Login'>
+        <Stack.Screen name='title' component={Title} />
+        <Stack.Screen name='signin' component={SignIn} />
+        <Stack.Screen name='signup' component={SignUp} />
+      </Stack.Navigator>
       <Stack.Navigator>
         <Stack.Screen name='today' component={Today} />
         <Stack.Screen name='calendaar' component={Calendaar} />
