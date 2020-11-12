@@ -12,11 +12,13 @@ import { Calendar, CalendarList, Agenda } from "react-native-calendars";
 import { Divider, Text } from "react-native-paper";
 import { Constants } from "expo";
 
-const Calendaar = () => {
+const Calendaar = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.btncontainer}>
-        <TouchableOpacity style={[styles.round, styles.leftbtn]}>
+        <TouchableOpacity
+          style={[styles.round, styles.leftbtn]}
+          onPress={() => navigation.navigate("today")}>
           <Text style={{ color: "black", fontSize: 13, fontWeight: "bold" }}>
             Today
           </Text>
