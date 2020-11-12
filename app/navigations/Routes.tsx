@@ -15,7 +15,7 @@ import PlantCard from "../screens/plantCard";
 
 const Stack = createStackNavigator();
 //28 20
-function App() {
+function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routes;
