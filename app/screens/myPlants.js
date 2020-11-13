@@ -8,12 +8,14 @@ import {
   Image,
   Text,
 } from "react-native";
+import SearchBar from "../components/search";
 
 const MyPlants = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <View>
+      <View style={styles.top}>
         <Text style={{ fontSize: 32, fontWeight: "bold" }}>My Plants</Text>
+        <SearchBar />
       </View>
       <FlatList></FlatList>
       <TouchableOpacity style={styles.circlebutton}>
@@ -26,6 +28,14 @@ const MyPlants = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    margin: 16,
+  },
+  top: {
+    marginLeft: 16,
+    marginTop: 16,
+  },
+  list: {
+    flexDirection: "column",
   },
   circlebutton: {
     //marginBottom: 46,
@@ -36,6 +46,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderBottomWidth: 4,
     borderColor: "#352F39",
+    //alignContent: "right",
   },
 });
 
