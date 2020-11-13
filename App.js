@@ -22,12 +22,12 @@ const Tab = createBottomTabNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='today' component={Today} />
-        <Stack.Screen name='calendaar' component={Calendaar} />
-        <Stack.Screen name='myplants' component={MyPlants} />
-        <Stack.Screen name='settings' component={Settings} />
-      </Stack.Navigator>
+      <Tab.Navigator>
+        <Tab.Screen name='today' component={Today} />
+        <Tab.Screen name='calendaar' component={Calendaar} />
+        <Tab.Screen name='myplants' component={MyPlants} />
+        <Tab.Screen name='settings' component={Settings} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }

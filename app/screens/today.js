@@ -33,10 +33,6 @@ const Today = ({ navigation }) => {
       </View>
       <View style={styles.container}>
         <Text>Nov 1, 2020</Text>
-        <Button
-          title='myPlants'
-          onPress={() => navigation.navigate("myplants")}
-        />
       </View>
     </SafeAreaView>
   );

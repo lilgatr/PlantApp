@@ -12,8 +12,9 @@ import {
 const MyPlants = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 32, fontWeight: "bold" }}>My Plants</Text>
-
+      <View>
+        <Text style={{ fontSize: 32, fontWeight: "bold" }}>My Plants</Text>
+      </View>
       <FlatList></FlatList>
       <TouchableOpacity style={styles.circlebutton}>
         <Image />
