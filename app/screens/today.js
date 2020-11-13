@@ -18,13 +18,14 @@ const Today = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.btncontainer}>
         <TouchableOpacity style={[styles.round, styles.leftbtn]}>
-          <Text style={{ color: "#FFF", fontSize: 13, fontWeight: "bold" }}>
-            Today
-          </Text>
+          <Text style={{ color: "#FFF", fontSize: 13 }}>Today</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[styles.round, styles.rightbtn]}>
           <Text
-            style={{ color: "black", fontSize: 13, fontWeight: "bold" }}
+            style={{
+              color: "black",
+              fontSize: 13,
+            }}
             onPress={() => navigation.navigate("calendaar")}>
             Calendar
           </Text>
@@ -32,6 +33,10 @@ const Today = ({ navigation }) => {
       </View>
       <View style={styles.container}>
         <Text>Nov 1, 2020</Text>
+        <Button
+          title='myPlants'
+          onPress={() => navigation.navigate("myplants")}
+        />
       </View>
     </SafeAreaView>
   );
