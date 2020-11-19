@@ -13,8 +13,8 @@ import DATA from "../components/data";
 
 const renderItem = ({ item }) => <Item title={item.title} />;
 const Item = ({ title }) => (
-  <View>
-    <Text>{title}</Text>
+  <View style={styles.list}>
+    <Text style={styles.card}>{title}</Text>
   </View>
 );
 
@@ -25,16 +25,18 @@ const MyPlants = () => {
         <Text style={{ fontSize: 32, fontWeight: "bold" }}>My Plants</Text>
         <SearchBar />
       </View>
-      <View>
+      <View style={styles.list}>
         <FlatList
           data={DATA}
           renderItem={renderItem}
           keyExtractor={(item) => item.id}
         />
       </View>
-      <TouchableOpacity style={styles.circlebutton}>
-        <Image />
-      </TouchableOpacity>
+      <View style={styles.bottom}>
+        <TouchableOpacity style={styles.circlebutton}>
+          <Image />
+        </TouchableOpacity>
+      </View>
     </SafeAreaView>
   );
 };
@@ -49,10 +51,18 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   list: {
+    margin: 16,
     flexDirection: "column",
+    //backgroundColor: "grey",
+  },
+  card: {
+    backgroundColor: "grey",
+    //justifyContent: "space-around",
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
   },
   circlebutton: {
-    //marginBottom: 46,
     width: 60,
     height: 60,
     backgroundColor: "#FDEE68",
@@ -60,7 +70,10 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderBottomWidth: 4,
     borderColor: "#352F39",
-    //alignContent: "right",
+  },
+  bottom: {
+    alignItems: "flex-end",
+    margin: 16,
   },
 });
 
