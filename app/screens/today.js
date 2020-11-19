@@ -13,6 +13,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Calendaar from "./calendar";
 
+const Stack = createStackNavigator();
+
 const Today = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
