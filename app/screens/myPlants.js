@@ -9,6 +9,14 @@ import {
   Text,
 } from "react-native";
 import SearchBar from "../components/search";
+import DATA from "../components/data";
+
+const renderItem = ({ item }) => <Item title={item.title} />;
+const Item = ({ title }) => (
+  <View>
+    <Text>{title}</Text>
+  </View>
+);
 
 const MyPlants = () => {
   return (
@@ -17,7 +25,13 @@ const MyPlants = () => {
         <Text style={{ fontSize: 32, fontWeight: "bold" }}>My Plants</Text>
         <SearchBar />
       </View>
-      <FlatList></FlatList>
+      <View>
+        <FlatList
+          data={DATA}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+        />
+      </View>
       <TouchableOpacity style={styles.circlebutton}>
         <Image />
       </TouchableOpacity>
