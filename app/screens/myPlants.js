@@ -7,14 +7,18 @@ import {
   FlatList,
   Image,
   Text,
+  ImageBackground,
 } from "react-native";
 import SearchBar from "../components/search";
 import DATA from "../components/data";
 
-const renderItem = ({ item }) => <Item title={item.title} />;
-const Item = ({ title }) => (
-  <View style={styles.list}>
-    <Text style={styles.card}>{title}</Text>
+const renderItem = ({ item }) => (
+  <Item title={item.title} subtitle={item.subtitle} />
+);
+const Item = ({ title, subtitle }) => (
+  <View style={styles.card}>
+    <Text style={styles.title}>{title}</Text>
+    <Text style={styles.subtitle}>{subtitle}</Text>
   </View>
 );
 
@@ -22,7 +26,9 @@ const MyPlants = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.top}>
-        <Text style={{ fontSize: 32, fontWeight: "bold" }}>My Plants</Text>
+        <Text style={{ fontSize: 32, fontWeight: "bold", marginBottom: 16 }}>
+          My Plants
+        </Text>
         <SearchBar />
       </View>
       <View style={styles.list}>
@@ -50,17 +56,29 @@ const styles = StyleSheet.create({
     marginLeft: 16,
     marginTop: 16,
   },
-  list: {
-    margin: 16,
-    flexDirection: "column",
-    //backgroundColor: "grey",
-  },
   card: {
+    margin: 16,
+    marginBottom: 16,
+    flexDirection: "column",
     backgroundColor: "grey",
-    //justifyContent: "space-around",
-    padding: 20,
-    marginVertical: 8,
+    borderBottomWidth: 4,
+    borderColor: "#BECCB9",
+    paddingLeft: 12,
+    borderRadius: 16,
+  },
+  title: {
+    color: "white",
+    fontWeight: "bold",
+    paddingTop: 230,
     marginHorizontal: 16,
+    fontSize: 24,
+  },
+  subtitle: {
+    color: "#E4E3E3",
+    fontWeight: "600",
+    marginHorizontal: 16,
+    paddingBottom: 22,
+    fontSize: 16,
   },
   circlebutton: {
     width: 60,
@@ -76,5 +94,6 @@ const styles = StyleSheet.create({
     margin: 16,
   },
 });
+//numColumns={2}
 
 export default MyPlants;
