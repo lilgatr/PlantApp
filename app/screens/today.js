@@ -13,6 +13,7 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import DATA from "../components/data";
+import Calendaar from "./calendar";
 
 const Stack = createStackNavigator();
 
@@ -25,6 +26,17 @@ const Item = ({ title, subtitle }) => (
     <Text style={styles.subtitle}>{subtitle}</Text>
   </View>
 );
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Today' component={Today} />
+        <Stack.Screen name='Calendar' component={Calendaar} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 
 const Today = ({ navigation }) => {
   return (
@@ -45,7 +57,7 @@ const Today = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.container}>
-        <Text>Nov 1, 2020</Text>
+        <Text style={{ marginBottom: 10 }}>Nov 1, 2020</Text>
         <View style={styles.list}>
           <FlatList
             data={DATA}
@@ -93,13 +105,14 @@ const styles = StyleSheet.create({
     borderBottomWidth: 4,
   },
   card: {
-    margin: 16,
+    margin: 5,
     marginBottom: 16,
     flexDirection: "column",
     backgroundColor: "grey",
     borderBottomWidth: 4,
     borderColor: "#BECCB9",
     paddingLeft: 12,
+    borderRadius: 16,
   },
   title: {
     color: "white",

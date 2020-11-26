@@ -31,16 +31,17 @@ const Calendaar = ({ navigation }) => {
       </View>
       <View style={styles.cal}>
         <Calendar
+          style={{ marginTop: 16 }}
           displayLoadingIndicator
           markingType={"period"}
           theme={{
-            "calendarBackground": "white",
+            "calendarBackground": "none",
             "textSectionTitleColor": "black",
             "textSectionTitleDisabledColor": "black",
             "dayTextColor": "black",
             "todayTextColor": "blue",
             "monthTextColor": "black",
-            "indicatorColor": "white",
+            "indicatorColor": "black",
             "arrowColor": "black",
 
             "stylesheet.calendar.header": {

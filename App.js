@@ -24,6 +24,7 @@ function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name='today' component={Today} />
+        <Tab.Screen name='calendaar' component={Calendaar} />
         <Tab.Screen name='myplants' component={MyPlants} />
         <Tab.Screen name='settings' component={Settings} />
       </Tab.Navigator>
