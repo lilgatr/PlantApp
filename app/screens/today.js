@@ -27,17 +27,6 @@ const Item = ({ title, subtitle }) => (
   </View>
 );
 
-function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='Today' component={Today} />
-        <Stack.Screen name='Calendar' component={Calendaar} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-
 const Today = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
