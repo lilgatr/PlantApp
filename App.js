@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { Provider as PaperProvider } from "react-native-paper";
 
 import Title from "./app/screens/title";
 import SignIn from "./app/screens/signIn";
@@ -14,9 +15,11 @@ import MyPlants from "./app/screens/myPlants";
 import Settings from "./app/screens/settings";
 
 import PlantCard from "./app/screens/plantCard";
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 
+const Tab = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
-const Tab = createBottomTabNavigator();
+//const Tab = createBottomTabNavigator();
 // 22:03
 
 function App() {
@@ -32,4 +35,12 @@ function App() {
   );
 }
 
-export default App;
+function Main() {
+  return (
+    <PaperProvider>
+      <App />
+    </PaperProvider>
+  );
+}
+
+export default Main;
