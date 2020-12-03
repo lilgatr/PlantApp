@@ -15,11 +15,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import DATA from "../components/data";
 import Calendaar from "./calendar";
 
-const Stack = createStackNavigator();
-
 const renderItem = ({ item }) => (
   <Item title={item.title} subtitle={item.subtitle} />
 );
+
 const Item = ({ title, subtitle }) => (
   <View style={styles.card}>
     <Text style={styles.title}>{title}</Text>
@@ -27,14 +26,14 @@ const Item = ({ title, subtitle }) => (
   </View>
 );
 
-function App() {
+const Stack = createStackNavigator();
+
+function TodayStack() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='Today' component={Today} />
-        <Stack.Screen name='Calendar' component={Calendaar} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator headerMode='none'>
+      <Stack.Screen name='Today' component={Today} />
+      <Stack.Screen name='calendaar' component={Calendaar} />
+    </Stack.Navigator>
   );
 }
 
@@ -130,4 +129,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Today;
+export default TodayStack;

@@ -8,7 +8,7 @@ import Title from "./app/screens/title";
 import SignIn from "./app/screens/signIn";
 import SignUp from "./app/screens/signUp";
 
-import Today from "./app/screens/today";
+import TodayStack from "./app/screens/today";
 import Calendaar from "./app/screens/calendar";
 import MyPlants from "./app/screens/myPlants";
 import Settings from "./app/screens/settings";
@@ -23,13 +23,13 @@ function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name='today' component={Today} />
-        <Tab.Screen name='calendaar' component={Calendaar} />
+        <Tab.Screen name='today' component={TodayStack} />
+
         <Tab.Screen name='myplants' component={MyPlants} />
         <Tab.Screen name='settings' component={Settings} />
       </Tab.Navigator>
     </NavigationContainer>
   );
 }
-
+//<Tab.Screen name='calendaar' component={Calendaar} />
 export default App;

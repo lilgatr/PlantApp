@@ -8,9 +8,10 @@ import {
   Image,
   Button,
 } from "react-native";
-import { Calendar, CalendarList, Agenda } from "react-native-calendars";
+import { Calendar } from "react-native-calendars";
 import { Divider, Text } from "react-native-paper";
-import { Constants } from "expo";
+
+//remember navigation.goBack() is a thing
 
 const Calendaar = ({ navigation }) => {
   return (
@@ -18,7 +19,7 @@ const Calendaar = ({ navigation }) => {
       <View style={styles.btncontainer}>
         <TouchableOpacity
           style={[styles.round, styles.leftbtn]}
-          onPress={() => navigation.navigate("today")}>
+          onPress={() => navigation.pop()}>
           <Text style={{ color: "black", fontSize: 13, fontWeight: "bold" }}>
             Today
           </Text>
@@ -35,7 +36,7 @@ const Calendaar = ({ navigation }) => {
           displayLoadingIndicator
           markingType={"period"}
           theme={{
-            "calendarBackground": "none",
+            "calendarBackground": "#FFF",
             "textSectionTitleColor": "black",
             "textSectionTitleDisabledColor": "black",
             "dayTextColor": "black",
@@ -56,9 +57,7 @@ const Calendaar = ({ navigation }) => {
       </View>
       <Divider style={styles.lineStyle} />
       <View style={styles.bcontainer}>
-        <Text style={{ color: "grey", fontSize: 13, fontWeight: "semi-bold" }}>
-          10 AM
-        </Text>
+        <Text style={{ color: "grey", fontSize: 13 }}>10 AM</Text>
         <Text style={{ color: "black", fontSize: 13, fontWeight: "bold" }}>
           Water the Planes
         </Text>
