@@ -3,14 +3,10 @@ import {
   StyleSheet,
   View,
   SafeAreaView,
-  SectionList,
   TouchableOpacity,
   FlatList,
-  Image,
-  Button,
   Text,
 } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import DATA from "../components/data";
 import Calendaar from "./calendar";
@@ -56,7 +52,7 @@ const Today = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.container}>
-        <Text style={{ marginBottom: 10 }}>Nov 1, 2020</Text>
+        <Text style={{ marginBottom: 10, fontSize: 16 }}>Nov 1, 2020</Text>
         <View style={styles.list}>
           <FlatList
             data={DATA}

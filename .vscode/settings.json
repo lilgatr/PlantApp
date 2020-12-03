@@ -1,8 +1,16 @@
 {
     "cSpell.words": [
+        "bcontainer",
+        "bigtext",
+        "buttontext",
         "calendaar",
+        "googlebutton",
         "leftbtn",
-        "rightbtn"
+        "planticon",
+        "rightbtn",
+        "signinbutton",
+        "tabler",
+        "twobutton"
     ],
     "editor.formatOnSave": true
 }

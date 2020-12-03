@@ -1,17 +1,7 @@
 import React from "react";
-import {
-  StyleSheet,
-  View,
-  SafeAreaView,
-  SectionList,
-  TouchableOpacity,
-  Image,
-  Button,
-} from "react-native";
+import { StyleSheet, View, SafeAreaView, TouchableOpacity } from "react-native";
 import { Calendar } from "react-native-calendars";
 import { Divider, Text } from "react-native-paper";
-
-//remember navigation.goBack() is a thing
 
 const Calendaar = ({ navigation }) => {
   return (
@@ -76,7 +66,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 24,
     paddingHorizontal: 16,
-    //justifyContent: "center",
     flexDirection: "column",
   },
   btncontainer: {

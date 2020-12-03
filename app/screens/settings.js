@@ -3,10 +3,7 @@ import {
   StyleSheet,
   View,
   SafeAreaView,
-  SectionList,
   TouchableOpacity,
-  Image,
-  Button,
   Text,
 } from "react-native";
 

@@ -1,11 +1,9 @@
-import { StatusBar } from "expo-status-bar";
 import * as React from "react";
 import {
   StyleSheet,
   Text,
   View,
   SafeAreaView,
-  SectionList,
   TouchableOpacity,
   Image,
 } from "react-native";
@@ -104,7 +102,6 @@ const styles = StyleSheet.create({
     borderColor: "#352F39",
     borderRadius: 16,
     borderWidth: 2,
-    //borderBottomWidth: 4,
   },
   signinbutton: {
     alignItems: "center",
