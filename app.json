@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "PlantApp",
+    "name": "Plant App",
     "slug": "PlantApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Work in progress plant app for reminders and organization."
   }
 }
