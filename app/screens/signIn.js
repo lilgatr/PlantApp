@@ -20,7 +20,7 @@ const SignIn = () => {
           <TouchableOpacity style={styles.googlebutton}>
             <Image
               style={styles.img}
-              source={require("../../assets/Group_6795.png")}
+              source={require("../../assets/google.png")}
             />
             <Text> Continue with Google</Text>
           </TouchableOpacity>
