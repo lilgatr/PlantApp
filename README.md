@@ -4,16 +4,16 @@
 
 ![app icon](assets/logo.png)
 
--Subtitle-
+<h2>Subtitle</h2>
 
 Plant Care - Reminders and Organizer
 
--Screenshots-
+<h2>Screenshots</h2>
 
--Description-
+<h2>Description</h2>
 
--Promotional Text-
+<h2>Promotional Text</h2>
 
--Keywords-
+<h2>Keywords</h2>
 
 plant, reminder, plant care, gardening,
