@@ -1,6 +1,6 @@
 # PlantApp
 
-icon here
+![app icon](icon.png)
 
 -Subtitle-
 
