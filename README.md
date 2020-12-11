@@ -1,6 +1,8 @@
 # PlantApp
 
-![app icon](icon.png)
+-App Logo-
+
+![app icon](assets/logo.png)
 
 -Subtitle-
 
