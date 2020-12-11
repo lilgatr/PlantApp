@@ -1,18 +1,14 @@
 # PlantApp
 
-<<<<<<< HEAD
--App Logo-
-
-![app icon](assets/logo.png)
-=======
-![app icon](icon.png)
->>>>>>> refs/remotes/origin/master
-
 -Subtitle-
 
 Plant Care - Reminders and Organizer
 
 -App Previews-
+
+-App Logo-
+
+![app icon](assets/logo.png)
 
 -Screenshots-
 
