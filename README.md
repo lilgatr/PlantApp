@@ -1,8 +1,12 @@
 # PlantApp
 
+<<<<<<< HEAD
 -App Logo-
 
 ![app icon](assets/logo.png)
+=======
+![app icon](icon.png)
+>>>>>>> refs/remotes/origin/master
 
 -Subtitle-
 
