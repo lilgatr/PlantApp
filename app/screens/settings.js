@@ -14,23 +14,25 @@ const Settings = () => {
         <Text style={{ fontSize: 32 }}>Settings</Text>
       </View>
       <View style={styles.secondHeader}>
-        <Text style={{ fontSize: 21, color: "#474A57" }}>General</Text>
+        <Text style={{ fontSize: 21, color: "#474A57", fontWeight: "500" }}>
+          General
+        </Text>
       </View>
-      <View style={styles.settings}>
-        <TouchableOpacity>
-          <Text>Account</Text>
+      <View>
+        <TouchableOpacity style={styles.settings}>
+          <Text style={styles.text}>Account</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>Preferences</Text>
+        <TouchableOpacity style={styles.settings}>
+          <Text style={styles.text}>Preferences</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>Display and Sound</Text>
+        <TouchableOpacity style={styles.settings}>
+          <Text style={styles.text}>Display and Sound</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>Accessability</Text>
+        <TouchableOpacity style={styles.settings}>
+          <Text style={styles.text}>Accessability</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>Privacy</Text>
+        <TouchableOpacity style={styles.settings}>
+          <Text style={styles.text}>Privacy</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -52,6 +54,10 @@ const styles = StyleSheet.create({
   settings: {
     paddingBottom: 10,
     marginHorizontal: 16,
+  },
+  text: {
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });
 
