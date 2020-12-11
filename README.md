@@ -1,14 +1,14 @@
 # PlantApp
 
+-App Logo-
+
+![app icon](assets/logo.png)
+
 -Subtitle-
 
 Plant Care - Reminders and Organizer
 
 -App Previews-
-
--App Logo-
-
-![app icon](assets/logo.png)
 
 -Screenshots-
 
