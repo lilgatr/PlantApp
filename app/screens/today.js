@@ -52,7 +52,7 @@ const Today = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.container}>
-        <Text style={{ marginBottom: 10, fontSize: 16 }}>Nov 1, 2020</Text>
+        <Text style={{ fontSize: 16, padding: 16 }}>Nov 1, 2020</Text>
         <View style={styles.list}>
           <FlatList
             data={DATA}

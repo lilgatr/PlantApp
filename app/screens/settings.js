@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     paddingBottom: 16,
   },
   settings: {
+    paddingBottom: 10,
     marginHorizontal: 16,
   },
 });
